@@ -19,19 +19,27 @@ const Nav = () => {
      
       <div className='w-full bg-black/20 h-[96px] backdrop-blur-2x1 rounded-full max-w-[460px] mx-auto px-5 flex justify-between items-center text-2x1 text-white/50'> 
 
-        <Link className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
+        <Link to='home' className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
           {/* este le da el icono casa */}
           <BiHomeAlt />
         </Link >
-        <Link className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
+
+        <Link to='about' className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
           {/* este le da el icono user */}
           <BiUser />
         </Link>
-        <Link className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
+
+        <Link to='services' className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
           {/* este le da el icono carpeta de clip */}
           <BsClipboardData />
         </Link >
-        <Link className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
+
+        <Link to='work' className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
+          {/* este le da el icono portafolio */}
+          <BsBriefcase />
+        </Link>
+        
+        <Link to='contact' className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
           {/* este le da el icono portafolio */}
           <BsBriefcase />
         </Link>
