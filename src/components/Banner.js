@@ -1,7 +1,7 @@
 import React from 'react';
 
 // importamos la imagen
-import Image from "../assets/ezeDeskUltimoDeVerdad.svg"
+import Image from "../assets/ultimoperfil.svg"
 // importamos  los iconos que vamos a usar
 import { FaGithub, FaLinkedin, FaDribbble } from "react-icons/fa"
 // importamos los tipos de animacion
