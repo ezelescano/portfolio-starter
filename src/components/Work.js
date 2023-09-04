@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 // importar variantes
 import { fadeIn } from '../variants';
 // import imagenes
-import img1 from '../assets/portfolio-img1.png'
-import img2 from '../assets/portfolio-img2.png'
-import img3 from '../assets/portfolio-img3.png'
+import img1 from '../assets/Marvel.svg'
+import img2 from '../assets/Portfolio.svg'
+import img3 from '../assets/urbanClub.svg'
 
 
 
@@ -25,15 +25,16 @@ const Work = () => {
             {/* {texto} */}
             <div>
               <h2 className='h2 leading-tight text-accent'>
-                Mi ultimo <br />
-                Trabajo
+                Mis <br />
+                Trabajos
               </h2>
               <p className='max-w-sm nb-16'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Estos son hasta el momento los proyectos en los cuales participé. Las tecnologías usadas fueron HTML, CSS, Javascript, React, Redux, Express, PostgreSQL,
+                Sequelize. Además de otros frameworks como Bootstrap, Tailwind, etc.
               </p>
-              <button className='btn btn-sm'>Mira todos los proyectos</button>
             </div>
             {/* {imagen} */}
+            <a href='https://proyecto-marvel-six.vercel.app/' target='_blank'>
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
               {/* {overlay} */}
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
@@ -41,13 +42,14 @@ const Work = () => {
               <img className='group-hover:scale-125 transition-all duration-500' src={img1} alt='' />
               {/* {subtitulo} */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UX/UI Desing</span>
+                <span className='text-gradient'>Proyecto Marvel</span>
               </div>
               {/* {titulo} */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text3xl text-white'>Titulo del proyecto</span>
+                <span className='text3xl text-white'>SPA hecho con HTML, CSS, Javascript, React, Express, Bootstrap</span>
               </div>
             </div>
+            </a>
           </motion.div>
           <motion.div
             variants={fadeIn('left', 0.2)}
@@ -63,13 +65,14 @@ const Work = () => {
               <img className='group-hover:scale-125 transition-all duration-500' src={img2} alt='' />
               {/* {subtitulo} */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UX/UI Desing</span>
+                <span className='text-gradient'>Portfolio Personal</span>
               </div>
               {/* {titulo} */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text3xl text-white'>Titulo del proyecto</span>
+                <span className='text3xl text-white'>Landing hecho con React, HTML, CSS, Tailwind, Javascript</span>
               </div>
             </div>
+           <a href='https://www.urbanclub.club/' target='_blank' >
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
               {/* {overlay} */}
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
@@ -77,13 +80,14 @@ const Work = () => {
               <img className='group-hover:scale-125 transition-all duration-500' src={img3} alt='' />
               {/* {subtitulo} */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>UX/UI Desing</span>
+                <span className='text-gradient'>UrbanClub</span>
               </div>
               {/* {titulo} */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text3xl text-white'>Titulo del proyecto</span>
+                <span className='text3xl text-white'>Proyecto Final hecho para Henry Bootcamp</span>
               </div>
             </div>
+            </a>
           </motion.div>
         </div>
       </div>
