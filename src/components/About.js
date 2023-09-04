@@ -7,6 +7,7 @@ import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 // importamos las variante
 import { fadeIn } from "../variants"
+import { Link } from 'react-scroll';
 
 
 const About = () => {
@@ -40,13 +41,19 @@ const About = () => {
               Soy Full Stack Developer, con 1 año de experiencia.
             </h3>
             <p className='mb-6'>
-             
+              Soy un desarrollador Full Stack con una sólida trayectoria de 11 años en el transporte público de pasajeros, desempeñando el rol de chofer de colectivo.
+              Sin embargo, después de un extenso período en una profesión que ya no me desafiaba, tomé la decisión de cambiar de rumbo tras conversar con mi familia.
+              Fue entonces cuando regresé a los estudios y me di cuenta de que nunca debí alejarme de la programación, una pasión que había cultivado desde mi adolescencia,
+              cuando programaba en Pascal. Hoy me encuentro en constante desafío, explorando nuevas tecnologías, lenguajes y conceptos.
+              Disfruto colaborar en equipos y motivar a mis compañeros a trabajar de manera conjunta. Mi objetivo es aportar mis conocimientos y creatividad
+              para impulsar proyectos hacia el éxito. Estoy comprometido con mi crecimiento profesional en la industria de la tecnología y estoy ansioso por continuar
+              aprendiendo y desarrollándome en este emocionante campo.
             </p>
             {/* stats */}
             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={13} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={1} duration={3} /> : null}
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
                   Años de <br />
@@ -54,15 +61,15 @@ const About = () => {
                 </div>
               </div>
               <div>
-                <button className='btn btn-lg'>Contáctame</button>
-                <a href='#' className='text-gradient btn-link'>
-                  Mi Portfolio
+               <Link to='contact'> <button className='btn btn-lg'>Contáctame</button></Link>
+                <a href='/CV_Eze_Actualizado.pdf' download='CV_Eze_Actualizado' className='text-gradient btn-link'>
+                  Mi CV
                 </a>
               </div>
             </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
-    </div>
     </section >
   );
 };

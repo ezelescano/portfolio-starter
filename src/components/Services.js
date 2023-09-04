@@ -6,24 +6,25 @@ import { motion } from 'framer-motion';
 // variantes
 import { fadeIn } from '../variants'
 
+
 // services data
-const services = [
+const slides = [
   {
-    name: "Development",
-    description:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 
-    link: 'learn more'
+    name: 'Mauro Moyano',
+    comentario: 'De compañeros a amigos! Porque es una gran persona, es muy empático y trabaja muy bien en quipo! Fue un gusto poder compartir con Eze el rol de TA y como compañero de estudio puedo decir que es super responsable ...',
+    link: 'https://www.linkedin.com/in/mauro-moyano-dev-full-stack'
   },
   {
-    name: "UX/UI Desing",
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 
-    link: 'learn more'
+    name: 'Juan Daniel Gonzalez',
+    comentario: 'Eze es una gran persona, tuve la oportunidad de ser compañero de el como TA y de conocerlo. Estoy seguro que seguirá dando lo mejor de el en todo momento y que es una integrante muy importante para cualquier equipo!',
+    link: 'https://www.linkedin.com/in/gonzalezjuanr'
   },
   {
-    name: "Digital Marketing",
-    description:  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 
-    link: 'learn more'
-  },
-]
+    name: 'Ricardo Ariel Maya',
+    comentario: 'Sin lugar a dudas, Eze es una persona con la que es un placer trabajar. Tiene la habilidad de enfrentar desafíos sin temor y no duda en buscar apoyo cuando lo requiere. Se entrega completamente al equipo y comprende ...',
+    link: 'https://www.linkedin.com/in/ricardomaya'
+  }
+];
 
 const Services = () => {
   return (
@@ -32,42 +33,40 @@ const Services = () => {
         <div className='flex flex-col lg:flex-row'>
           {/* texto  e imagen*/}
           <motion.div
-          variants={fadeIn('right', 0.3)}
-          initial='hidden'
-          whileInView={'show'}
-          viewport={{ once: false, amount: 0.3 }}
-          className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
-            <h2 className='h2 text-accent mb-6'>Que es lo que hago?</h2>
-            <h3 className='h3 max-w-[455px] mb-16'>Soy Full Stack Developer, con 1 año de experiencia.</h3>
-            <button className='btn btn-sm'>Mira mi trabajo</button>
+            variants={fadeIn('right', 0.3)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.3 }}
+            className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
+            <h2 className='h2 text-accent mb-6'>EL TRABAJO EN EQUIPO!</h2>
+            <h3 className='h3 max-w-[455px] mb-16'>Como comente anteriormente, creo que el trabajo en equipo es fundamental para llegar a cumplir los objetivos 
+            que tengamos!</h3>
+            {/* <button className='btn btn-sm '>Mira mi trabajo</button> */}
           </motion.div>
           {/* servicios */}
           <motion.div
-          variants={fadeIn('left', 0.5)}
-          initial='hidden'
-          whileInView={'show'}
-          viewport={{ once: false, amount: 0.3 }}
-          className='flex-1'>
+            variants={fadeIn('left', 0.5)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: false, amount: 0.3 }}
+            className='flex-1'>
             {/* lista de servicios */}
             <div>
-              {services.map((service, index) => {
-                const { name, description, link } = service;
+              {slides.map((slide, index) => {
+                const { name, comentario, link } = slide;
                 return (
                   <div className='border-b border-white/20 h-[146px] mb-[38px] flex' key={index}>
                     <div className='max-w-[476px]'>
-                      <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-6'>
+                      <h4 className='text-[20px] tracking-wider font-primary text-gradient font-semibold mb-6'>
                         {name}
                       </h4>
                       <p className='font-secondary leading-tight'>
-                        {description}
+                        {comentario}
                       </p>
                     </div>
                     <div className='flex flex-col flex-1 items-end'>
-                      <a href='#' className='btn w-9 h-9 mb-[42px] flex justify-center items-center'>
+                      <a href={link} className='btn w-9 h-9 mb-[42px] flex justify-center items-center'>
                         <BsArrowUpRight />
-                      </a>
-                      <a href='#' className='text-gradient text-sm'>
-                        {link}
                       </a>
                     </div>
                   </div>
