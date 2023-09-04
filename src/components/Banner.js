@@ -10,6 +10,8 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 // importamos variantes
 import { fadeIn } from "../variants"
+import { Link } from 'react-scroll';
+
 
 
 const Banner = () => {
@@ -56,7 +58,9 @@ const Banner = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
               className='mb-8 max-w-lg mx-auto lg:mx-0 '>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+             Soy un apasionado programador Full Stack dedicado a la creación de aplicaciones. Disfruto colaborar en equipos y explorar nuevas tecnologías para aplicarlas en proyectos.
+              Esta búsqueda constante de superación y desafío personal me impulsa a seguir mejorando continuamente. 
+
             </motion.p>
             <motion.div
               variants={fadeIn('up', 0.6)}
@@ -64,9 +68,9 @@ const Banner = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
               className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0' >
-              <button className='btn btn-lg'>Contáctame</button>
-              <a href='#' className='text-gradient btn-link'>
-                Mi Portfolio
+             <Link to='contact'> <button className='btn btn-lg'>Contáctame</button> </Link>
+              <a href='/CV_Eze_Actualizado.pdf' download='CV_Eze_Actualizado' className='text-gradient btn-link'>
+                Mi CV
               </a>
             </motion.div>
             {/* redes sociales */}
@@ -76,14 +80,11 @@ const Banner = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
               className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-              <a href='#'>
+              <a  href='https://www.linkedin.com/in/eze-lescano83/' target="_blank">
                 <FaLinkedin />
               </a>
-              <a href='#'>
+              <a href='https://github.com/ezelescano' target="_blank">
                 <FaGithub />
-              </a>
-              <a href='#'>
-                <FaDribbble />
               </a>
             </motion.div>
           </div>
