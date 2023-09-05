@@ -2,6 +2,7 @@ import React from 'react';
 
 // importamos el logo
 import Logo from "../assets/logo.svg"
+import { Link } from 'react-scroll';
 
 const Header = () => {
   return (
@@ -13,7 +14,7 @@ const Header = () => {
             <img src={Logo} alt='' />
           </a>
             {/* aca va el boton */}
-            <button className='btn btn-sm'>Trabaja Conmigo</button>
+           <Link to='contact'> <button className='btn btn-sm'>Trabaja Conmigo</button> </Link>
         </div>
       </div>
     </header>

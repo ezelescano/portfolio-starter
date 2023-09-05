@@ -39,8 +39,7 @@ const Services = () => {
             viewport={{ once: false, amount: 0.3 }}
             className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
             <h2 className='h2 text-accent mb-6'>EL TRABAJO EN EQUIPO!</h2>
-            <h3 className='h3 max-w-[455px] mb-16'>Como comente anteriormente, creo que el trabajo en equipo es fundamental para llegar a cumplir los objetivos 
-            que tengamos!</h3>
+            <h3 className='h3 max-w-[455px] mb-16'>Como mencioné previamente, considero que el trabajo en equipo es esencial para alcanzar nuestros objetivos</h3>
             {/* <button className='btn btn-sm '>Mira mi trabajo</button> */}
           </motion.div>
           {/* servicios */}

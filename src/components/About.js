@@ -41,7 +41,7 @@ const About = () => {
               Soy Full Stack Developer, con 1 año de experiencia.
             </h3>
             <p className='mb-6'>
-              Soy un desarrollador Full Stack con una sólida trayectoria de 11 años en el transporte público de pasajeros, desempeñando el rol de chofer de colectivo.
+              Soy un desarrollador Full Stack con una trayectoria de 11 años en el transporte público de pasajeros, desempeñando el rol de chofer de colectivo.
               Sin embargo, después de un extenso período en una profesión que ya no me desafiaba, tomé la decisión de cambiar de rumbo tras conversar con mi familia.
               Fue entonces cuando regresé a los estudios y me di cuenta de que nunca debí alejarme de la programación, una pasión que había cultivado desde mi adolescencia,
               cuando programaba en Pascal. Hoy me encuentro en constante desafío, explorando nuevas tecnologías, lenguajes y conceptos.
@@ -56,7 +56,7 @@ const About = () => {
                   {inView ? <CountUp start={0} end={1} duration={3} /> : null}
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
-                  Años de <br />
+                  Año de <br />
                   Experiencia
                 </div>
               </div>
