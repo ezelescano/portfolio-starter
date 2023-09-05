@@ -2,7 +2,7 @@ import React from 'react';
 // se importan los iconos de la biblioteca react-icons/bi
 
 import { BiHomeAlt, BiUser } from "react-icons/bi";
-import { BsClipboardData, BsBriefcase, BsChatSquare, BsChatSquareText } from "react-icons/bs";
+import { BsClipboardData, BsBriefcase, BsChatSquareText } from "react-icons/bs";
 
 // se importa link de la biblioteca react-scroll
 

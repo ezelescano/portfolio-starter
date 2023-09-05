@@ -3,7 +3,7 @@ import React from 'react';
 // importamos la imagen
 import Image from "../assets/ultimoperfil.svg"
 // importamos  los iconos que vamos a usar
-import { FaGithub, FaLinkedin, FaDribbble } from "react-icons/fa"
+import { FaGithub, FaLinkedin } from "react-icons/fa"
 // importamos los tipos de animacion
 import { TypeAnimation } from 'react-type-animation';
 // importamos motion
@@ -80,10 +80,10 @@ const Banner = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
               className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-              <a  href='https://www.linkedin.com/in/eze-lescano83/' target="_blank">
+              <a  href='https://www.linkedin.com/in/eze-lescano83/' target="_blank" rel="noreferrer">
                 <FaLinkedin />
               </a>
-              <a href='https://github.com/ezelescano' target="_blank">
+              <a href='https://github.com/ezelescano' target="_blank" rel="noreferrer">
                 <FaGithub />
               </a>
             </motion.div>
